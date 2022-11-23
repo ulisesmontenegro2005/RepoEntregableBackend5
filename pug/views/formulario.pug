@@ -1,0 +1,16 @@
+h1(style='color:blue;') Ingrese datos
+br
+form(action='/personas' method='post')
+  .form-group
+    label(for='nombre')
+      b Nombre
+    input#nombre.form-control(type='text' name='nombre')
+  .form-group
+    label(for='apellido')
+      b Apellido
+    input#apellido.form-control(type='text' name='apellido')
+  .form-group
+    label(for='edad')
+      b Edad
+    input#edad.form-control(type='number' name='edad')
+  button.btn.btn-success.mt-3.mb-5 Enviar

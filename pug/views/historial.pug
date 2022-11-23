@@ -1,0 +1,15 @@
+h2(style='color:crimson;') Historial
+if personas.length > 0
+  .table-responsive
+    table.table.table-dark
+      tr(style='color: yellow;')
+        th Nombre
+        th Apellido
+        th Edad
+      each persona in personas
+        tr
+          td= persona.nombre 
+          td= persona.apellido
+          td= persona.edad
+else
+  h3.alert.alert-danger no se encontraron datos
